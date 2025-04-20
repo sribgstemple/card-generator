@@ -42,10 +42,10 @@ function App() {
   const day = format(new Date(date), "EEEE");
 
   return (
-    <div className="flex flex-col items-center min-h-screen px-2 py-6 font-sans bg-gray-100">
+    <div className="flex flex-col items-center min-h-screen px-2 py-6 font-sans bg-[#F0F0F0]">
       <h1 className="mb-4 text-xl font-bold">Temple Card Editor</h1>
 
-      <div className="w-full max-w-md mb-6 space-y-2">
+      <div className="w-full max-w-md mb-6 space-y-2 bg-[#F0F0F0]">
         <input
           type="date"
           value={date}
@@ -107,7 +107,7 @@ function App() {
         </div> */}
         <div className="flex items-center gap-2 mb-2 border-b border-orange-300">
           <img
-            src="/logo.png"
+            src={`${import.meta.env.BASE_URL}logo.png`}
             alt="Temple Logo"
             className="object-contain w-16 h-16"
           />
@@ -115,7 +115,7 @@ function App() {
             <p className="font-bold leading-tight text-red-700 uppercase text-[.875rem]">
               Sri Balagurunadheeswara Swamy
             </p>
-            <p className="text-[.6563rem] leading-normal text-gray-700 mt-2">
+            <p className="text-[.6563rem] leading-normal  mt-2">
               Rachapalyam Village (SBR Puram),
               <br />
               Palasamudram Mandal, Chittoor, AP-517599
@@ -135,7 +135,7 @@ function App() {
         <div className="flex">
           <div className="flex items-center justify-center w-1/3 ">
             <img
-              src="/swamy.png"
+              src={`${import.meta.env.BASE_URL}swamy.png`}
               alt="Swamy"
               className="object-contain w-full h-40 rounded-lg shadow-sm"
             />
@@ -175,7 +175,11 @@ function App() {
               <strong>Branch:</strong> Sadashiv Nagar, Bengaluru
             </p>
           </div>
-          <img src="/qr.png" alt="QR Code" className="w-16 h-18" />
+          <img
+            src={`${import.meta.env.BASE_URL}qr.png`}
+            alt="QR Code"
+            className="w-16 h-18"
+          />
         </div>
       </div>
 
