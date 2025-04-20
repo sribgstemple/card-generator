@@ -1,1 +1,1 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('https://github.com/sribgstemple/card-generator.git/sw.js', { scope: 'https://github.com/sribgstemple/card-generator.git/' })})}
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/card-generator/sw.js', { scope: '/card-generator/' })})}
